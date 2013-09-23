@@ -12,11 +12,13 @@
 namespace lukesun{
 	class MathInterpreter{
 	private:
+		bool autoPrint;
 		bool isValidExpression(int argc, char* argv[]);
+		bool isValidNumber(char* pStr);
 	public:
 		MathInterpreter();
 		MathInterpreter(int argc, char* argv[]);
-		bool processExpression(int argc, char* argv[]);
+		int processExpression(int argc, char* argv[]);
 	};
 
 }
