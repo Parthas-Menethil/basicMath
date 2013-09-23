@@ -31,7 +31,7 @@ namespace lukesun{
 		}
 		if (!strcmp(argv[2], "+") &&
 			!strcmp(argv[2], "-") &&
-			!strcmp(argv[2], "*") &&
+			!strcmp(argv[2], "x") &&
 			!strcmp(argv[2], "/"))
 		{
 			return false;
@@ -60,7 +60,7 @@ namespace lukesun{
 			case '-':
 				result = para1 - para2;
 				break;
-			case '*':
+			case 'x':
 				result = para1 * para2;
 				break;
 			case '/':
