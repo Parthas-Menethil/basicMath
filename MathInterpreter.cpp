@@ -40,9 +40,9 @@ namespace lukesun{
 			return false;
 		}
 		if (!isValidNumber(argv[3])){
-			if (!strcmp(argv[3], "0")){
-				return false;
-			}
+			return false;
+		}
+		if (!strcmp(argv[2], "/") && !strcmp(argv[3], "0")){
 			return false;
 		}
 		return true;
