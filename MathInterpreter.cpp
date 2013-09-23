@@ -7,6 +7,7 @@
 #include "MathInterpreter.h"
 #include <iostream>
 #include <cstring>
+#include <cstdlib>
 namespace lukesun{
 
 	MathInterpreter::MathInterpreter(){
