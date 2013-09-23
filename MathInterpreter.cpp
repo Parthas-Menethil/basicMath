@@ -29,10 +29,10 @@ namespace lukesun{
 		if (strlen(argv[2]) != 1){
 			return false;
 		}
-		if (!strcmp(argv[2], "+") &&
-			!strcmp(argv[2], "-") &&
-			!strcmp(argv[2], "x") &&
-			!strcmp(argv[2], "/"))
+		if (strcmp(argv[2], "+") &&
+			strcmp(argv[2], "-") &&
+			strcmp(argv[2], "x") &&
+			strcmp(argv[2], "/"))
 		{
 			return false;
 		}
