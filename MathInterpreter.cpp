@@ -74,6 +74,7 @@ namespace lukesun{
 			}
 			return result;
 		}
+		return 0;
 	}
 	bool MathInterpreter::isValidNumber(char* pStr){
 		if (!pStr){
