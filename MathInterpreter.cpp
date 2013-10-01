@@ -13,7 +13,8 @@ namespace lukesun{
 	MathInterpreter::MathInterpreter(){
 		autoPrint = true;
 		std::cout<<"Math Interpreter V"<<LUKE_MATHINTERPRETER_VERSION<<std::endl
-		<<"Author:"<<LUKE_MATHINTERPRETER_AUTHOR<<std::endl;
+		<<"Author:"<<LUKE_MATHINTERPRETER_AUTHOR<<std::endl
+		<<"LastUpdate:"<<LUKE_MATHINTERPRETER_LASTUPDATE<<std::endl;
 	}
 	MathInterpreter::MathInterpreter(int argc, char* argv[]){
 		autoPrint = true;
@@ -74,7 +75,11 @@ namespace lukesun{
 			}
 			return result;
 		}
-		return 0;
+		else{
+			if (autoPrint)
+				std::cout<<"bm <number> <+-x/> <number>"<<std::endl;
+			return 0;
+		}
 	}
 	bool MathInterpreter::isValidNumber(char* pStr){
 		if (!pStr){
